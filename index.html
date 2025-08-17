@@ -23,7 +23,7 @@
         </section>
         <section class="form-container">
             <h2>Let's do this!</h2>
-            <form action="#" method="post">
+            <form action="#" method="post" id="sign-up-form">
                 <div class="form-row one">
                     <div class="input-control">
                         <label for="first-name">FIRST NAME*</label>
@@ -34,9 +34,34 @@
                         <input type="text" id="last-name" name="last-name" required>
                     </div>
                 </div>
+                <div class="form-row two">
+                    <div class="input-control">
+                        <label for="email">EMAIL*</label>
+                        <input type="email" id="email" name="email-id" required>
+                    </div>
+                    <div class="input-control">
+                        <label for="phone-number">PHONE NUMBER</label>
+                        <input type="tel" id="phone-number" name="phone-number" pattern="[0-9]{10}" title="Ten digit phone number">
+                    </div>
+                </div>
+                <div class="form-row three">
+                    <div class="input-control">
+                        <label for="password">PASSWORD*</label>
+                        <input type="password" id="password" name="password" minlength="8" maxlength="16" required>
+                    </div>
+                    <div class="input-control">
+                        <label for="confirm-password">CONFIRM PASSWORD*</label>
+                        <input type="password" id="confirm-password" name="confirm-password" required>
+                    </div>
+                </div>
             </form>
             
         </section>
+        <footer>
+            <button type="submit" form="sign-up-form">Create Account</button>
+            <p>Already have an account? <a href="">Log in</a></p>
+        </footer>
+        
         
     </div>
     
