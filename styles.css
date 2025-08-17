@@ -39,6 +39,9 @@ body {
     background-size: cover;
     display: flex;
     align-items: center;
+    flex-direction: column;
+    position: relative;
+    justify-content: center;
 }
 
 .logo-container {
@@ -51,6 +54,15 @@ body {
     justify-content: center;
     flex-direction: row;
     margin-bottom: 70%;
+}
+.credits {
+    position: absolute;
+    bottom: 0;
+    color: #2C3E50;
+    background-color: white;
+}
+.credits a {
+    color: rgba(227, 141, 37, 1);
 }
 
 .logo {
