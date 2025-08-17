@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: sans-serif;
 }
 @font-face {
     font-family: 'norsebold';
@@ -18,7 +19,6 @@ html, body {
 body {
     display: flex;
     flex-direction: row;
-    gap: 3%;
     background-color: bisque;
 }
 
@@ -27,7 +27,10 @@ body {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    width: 100%;
 }
+
+
 
 .left-side {
     height: 100%;
@@ -64,14 +67,27 @@ h1 {
     display: flex;
     justify-content: flex-start;
     flex-direction: column;
-    height: 30%;
+    height: 25%;
     gap: 20%;
+    margin-left: 3%;
+    align-self: flex-start;
+    justify-self: flex-start;
+    margin-bottom: 2%;
+    margin-top: 5%;
 }
 
 .form-container {
+    display: flex;
     justify-self: flex-start;
     align-self: flex-start;
-    border: 2px solid rgba(229, 155, 64, 0.53);
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    background-color: antiquewhite;
+    box-sizing: border-box;
+    padding: 5%;
+    position: relative;
+    padding-bottom: 2%;
 }
 
 .input-control {
@@ -83,4 +99,80 @@ h1 {
     flex-direction: row;
     width: 100%;
     gap: 20%;
+    margin: 1.1%;
+}
+
+button {
+    padding: 2%;
+    font-size: 1.2rem;
+    border-radius: 6px;
+    background-color: #2C3E50;
+    color: #FFFFFF;
+    transition: background-color 0.3s ease;
+    transition: box-shadow 0.3s ease;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: #2563EB;
+    box-shadow: 0 0 10px #0031d3, 0 0 20px #0000d37c;
+}
+
+footer {
+    align-self: flex-start;
+    justify-self: flex-start;
+    margin-left: 4%;
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    gap: 12%;
+    margin-top: 4%;
+}
+
+.header > h2 {
+    max-width: 55ch;
+}
+
+label {
+    letter-spacing: 2px;
+    font-size: 0.8rem;
+}
+
+input {
+    font-size: 1rem;
+    padding: 2%;
+    border: 1px solid black;
+    border-radius: 3px;
+}
+
+.header h2, .form-container h2, label {
+    color: #2C3E50;
+} 
+
+.form-container h2 {
+    position: absolute;
+    top: 7%;
+    left: 6%;  
+} 
+
+input[type="password"]:invalid {
+    border: 1px solid red;
+}
+
+input:focus {
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+a {
+  display: inline-block;
+  padding: 4px 8px;
+  border-radius: 6px;
+  color: #182fb0;
+  text-decoration: none;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+a:hover {
+  background-color: #FAD7A0;
+  color: #000;
 }
